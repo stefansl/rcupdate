@@ -9,6 +9,7 @@ USRGRP="clickpress.clickpress"
 #GET VERSIONNUMBER
 VERSION=`curl -s https://api.github.com/repos/roundcube/roundcubemail/releases/latest | grep 'tag_name' | cut -d\" -f4`
 
+cd ${APPPATH}
 wget https://github.com/roundcube/roundcubemail/releases/download/${VERSION}/roundcubemail-${VERSION}.tar.gz
 tar xvfz roundcubemail-${VERSION}.tar.gz
 cd roundcubemail-${VERSION}
