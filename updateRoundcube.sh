@@ -3,7 +3,7 @@
 # Autor StefanSL
 
 APPPATH="/var/www/clickpress/apps/"
-RCPATH="/var/www/clickpress/apps/roundcube"
+RCPATH="${APPPATH}roundcube"
 USRGRP="clickpress.clickpress"
 
 #GET VERSIONNUMBER
