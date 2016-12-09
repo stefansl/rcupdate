@@ -13,7 +13,7 @@ usage() {
     echo "-r version    choose a different version than the latest.";
 }
 
-while [[ "$#" > 1 ]]; do case $1 in
+while [ "$#" > 1 ]; do case $1 in
     -r) VERSION="$2";;
     *) break;;
   esac; shift; shift
